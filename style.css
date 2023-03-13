@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'HYWenHei 85W';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HYWenHei 85W'), url('Font/zhcn.woff') format('woff');
+}
+
+body{
+    margin: 0 0 0 0;
+    position: relative;
+    font-family: 'HYWenHei 85W';
+}
+
+/*Main divs*/
+#map-main-div{
+    position: absolute;
+    width: 100%;
+    margin-top: 10.075566750629722vh;
+    z-index: 5;
+}
+
+#map-page{
+    position: relative;
+}
+
+#map-page-back{
+    visibility: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #1D1C2280;
+    z-index: 499;
+}
+
+#map-popup-div{
+    display: flex;
+    justify-content: center;
+}
+
+.map-popup{
+    visibility: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    background-color: #FFFAED;
+    height: 113.35012594458438vh;
+    width: 53.475935828877006vw;
+    z-index: 500;
+}
+
+.map-popup-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.map-popup-container{
+    height: 215.5252525252525vh;
+    padding-left: 6.31vh;
+    padding-right: 3.2552083333333335vw;
+}
+
+#map-popup-back{
+    visibility: hidden;
+}
+
+.map-popup-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 12.62vh;
+    background-image: url("Images/Map Page Images/map popup header back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map-popup-header-text{
+    position: absolute;
+    font-size: 5.05vh;
+}
+
+.map-popup-content-headers{
+    display: flex;
+    flex-direction: column;
+    font-size: 3.78vh;
+}
+
+.map-popup-close{
+    padding-left: 88vh;
+}
+
+.map-popup-close-button{
+    height: 5.681818181818182vh;
+    width: 2.9296875vw;
+    background-image: url("Images/Map Page Images/Close Button.png");
+    background-size: cover;
+    border-radius: 1vh;
+    border: none;
+}
+
+.map-popup-close-button:hover{
+    cursor: pointer;
+}
+
+.map-popup-content-desc{
+    font-size: 2.52vh;
+}
+
+#character-main-div{
+    margin-top: 10.075566750629722vh;
+}
+
+/*Navigation Bar*/
+.nav-bar{
+    top: 0vh;
+    width: 100vw;
+    height: 10.075566750629722vh;
+    background-color: #1D1C22;
+    position: fixed;
+    z-index: 500;
+}
+/**/
+
+/*Main Content*/
+/*Containers*/
+.maps-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 5;
+}
+
+#tevyat-container{    
+    background-image: url("/Images/Map Page Images/map\ background\ 1.jpg");
+}
+
+#mondstadt-container{    
+    background-image: url("/Images/Map\ Page\ Images/mondstadt back.svg");
+}
+
+#liyue-container{    
+    background-image: url("/Images/Map\ Page\ Images/liyue\ back.svg");
+}
+
+#inazuma-container{    
+    background-image: url("/Images/Map\ Page\ Images/Inazuma back.svg");
+}
+
+#sumeru-container{
+    background-image: url("/Images/Map\ Page\ Images/Sumeru back.svg");
+}
+
+.main-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.7783375314861463vh;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+}
+
+/*FOOTER ELEMENT*/
+#footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 46.96969696969697vh;
+    width: 100%;
+}
+
+#footer-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7.703030303030303vh;
+}
+
+#footer-content-pg{
+    text-align: center;
+    font-size: 1.893939393939394vh;
+    height: 4.545454545454546vh;
+    width: 55.01354166666667vw;
+    color: white;
+}
+
+#footer-content-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 11.393749999999999vw;
+}
+
+#footer-owners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.1575757575757573vh;
+    background-color: #1D1C22;
+}
+
+#footer-owners-pg{
+    font-size: 1.2626262626262625vh;
+    color: white;
+}
+/**/
+/**/
+
+.white-rectangle{
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 8vh;
+    background-color: white;
+    background-repeat: repeat;
+    box-shadow: 0 0 5vh 8vh white;
+    position: relative;
+    z-index: 8;
+}
+
+/*TEXT + INFORMATION*/
+/*TEXTS*/
+/*TEVYAT*/
+#tevyat-text{
+    text-shadow: 0 4px 4px #1D1C2250;
+    position: absolute;
+    margin-bottom: 12vh;
+    font-size: 2.5188916876574305vh;
+    z-index: 7;
+}
+/**/
+
+/*MAP*/
+.map-text{
+    text-shadow: 0 4px 4px #1D1C2250;
+    position: relative;
+    /* padding-bottom: 12vh; */
+    font-size: 2.5188916876574305vh;
+    z-index: 7;
+}
+/**/
+
+/*INFORMATION*/
+/*BUTTON*/
+.more-information{
+    font-size: 1.8891687657430731vh;
+    color: white;
+    position: relative;
+    z-index: 7;
+}
+
+.more-information-button{
+    width: 3.125vw;
+    height: 6.06vh;
+    transition: 200ms;
+    background-image: url("Images/Map Page Images/more\ information\ button.svg");
+    background-size: cover;
+    position: relative;
+    z-index: 7;
+}
+
+.more-information-button:hover{
+    cursor: pointer;
+    background-image: url("Images/Map\ Page\ Images/more information button hover.svg");
+}
+/**/
+/**/
+
+/*Another Map page elements*/
+.scroll-down-map{
+    position: absolute;
+    align-self: flex-end;
+    padding-bottom: 10vh;
+    z-index: 7;
+}
+
+#scroll-down-tevyat{
+    position: absolute;
+    align-self: flex-end;
+    padding-bottom: 10vh;
+    z-index: 7;
+}
+
+#map-line{
+    position: absolute;
+    padding-top: 110vh;
+    padding-left: 3vw;
+    z-index: 7;
+}
+
+.map-header{
+    color: white;
+    z-index: 7;
+}
+
+.map-paragraph{
+    width: 64.97326203208556vw;
+    color: white;
+    z-index: 7;
+}
+
+.map-logo{
+    z-index: 6;
+}
+/**/
