@@ -1,0 +1,523 @@
+*{
+        
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#nav-bar{
+    height: 50px;
+    background-color: #1D1C22;
+}
+
+/* Map Page*/
+#main-div{
+    position: absolute;
+    width: 100%;
+}
+
+#map-page{
+    width: 100%;
+}
+
+.white-rect{
+    position: relative;
+    /* height: 5vh; */
+    height: calc(2.5vh + 1.2890625vw);
+    box-shadow: 0 0 5vh 8vh white;
+    z-index: 5;
+}
+
+.map-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 4;
+}
+
+/* Map Logo */
+.map-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+    height: calc(20.939393939393938vh + 11.765625vw);
+    width: calc(20.939393939393938vh + 11.765625vw);
+}
+
+.map-logo{
+    height: 90%;
+    width: 90%;
+    opacity: 40%;
+}
+
+/* Map Main Content */
+.map-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-info-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+    gap: calc(1.893939393939394vh + 0.9765625vw);
+    color: white;
+    text-align: center;
+    font-size: calc(0.9848484848484849vh + 0.78125vw);
+}
+
+#tevyat-info-header{
+    color: #FF3A44;
+}
+
+/* Map Header */
+.map-info-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 50px; */
+    /* width: 175px; */
+    gap: 3px;
+    height: calc(3.1565656565656566vh + 1.6276041666666667vw);
+    width: calc(11.047979797979798vh + 5.696614583333333vw);
+}
+
+.map-info-header{
+    font-size: 150%;
+}
+
+.map-header-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10px; */
+    /* width: 200px; */
+    height: 3px;
+    width: calc(12.626262626262626vh + 6.510416666666667vw);
+}
+
+.header-line{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    background-color: #FF3A44;
+}
+
+/* Map Paragraph */
+.map-info-paragraph-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 600px; */
+    /* width: calc(37.878787878787875vh + 19.53125vw); */
+    width: 80%;
+}
+
+#tevyat-info-paragraph{
+    color: #000000;
+}
+
+/* Map Info Button */
+.map-info-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    gap: calc(0.6313131313131313vh + 0.3255208333333333vw);
+}
+
+.map-info-button{
+    /* height: 40px; */
+    /* width: 40px; */
+    background-image: url("Images/Map Page Images/more-information-button.png");
+    background-size: cover;
+    background-position: center;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    height: calc(2.525252525252525vh + 1.3020833333333333vw);
+    width: calc(2.525252525252525vh + 1.3020833333333333vw);
+}
+
+.map-info-button:hover{
+    cursor: pointer;
+    transition: 200ms;
+    transform: scale(1.1);
+    background-image: url("Images/Map Page Images/more\ information\ button\ hover.svg");
+}
+
+#tevyat-container{
+    background-image: url("Images/Map Page Images/tevyat.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mondstadt-container{
+    background-image: url("Images/Map Page Images/mondstadt-page-back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#liyue-container{
+    background-image: url("Images/Map Page Images/liyue-page-back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inazuma-container{
+    background-image: url("Images/Map Page Images/inazuma-page-back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sumeru-container{
+    background-image: url("Images/Map Page Images/sumeru-page-back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.scroll-down-container{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70.13131313131313vh;
+    /* height: 50px; */
+    /* width: 100px; */
+    height: calc(3.1565656565656566vh + 1.6276041666666667vw);
+    width: calc(6.313131313131313vh + 3.2552083333333335vw);
+}
+
+.scroll-down-img{
+    height: 60%;
+    width: 60%;
+}
+
+/* Map Popup */
+.map-popup{
+    position: fixed;
+    overflow-y: scroll;
+    height: 100%;
+    z-index: 999;
+}
+
+.map-popup-container{
+    background-color: #000000BF;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.6041666666666665vw;
+    gap: 1.3605442176870748vh;
+}
+
+#mondstadt-popup-container{
+    display: none;
+}
+
+#liyue-popup-container{
+    display: none;
+}
+
+#inazuma-popup-container{
+    display: none;
+}
+
+#sumeru-popup-content-container{
+    width: 100vw;
+}
+
+#sumeru-popup-container{
+    display: none;
+}
+
+.map-location-container{
+    /* gap: 10px; */
+    gap: 1.3605442176870748vh;
+}
+
+.map-popup-line-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 322px; */
+    width: 22.963541666666668vw;
+    height: 0.9114583333333334vw;
+}
+
+
+/* Map Popup Header */
+.map-popup-header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    gap: 0.6510416666666666vw;
+}
+
+.map-popup-left-line{
+    height: 90%;
+    width: 90%;
+}
+
+.map-popup-header{
+    font-size: 90%;
+}
+
+.map-popup-right-line{
+    transform: rotate(180deg);
+    height: 90%;
+    width: 90%;
+}
+
+
+/* Close Button */
+.map-popup-close-button-container{
+    align-self: last baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 40px; */
+    /* width: 40px; */
+    height: calc(2.7210884353741496vh + 1.3020833333333333vw);
+    width: calc(2.7210884353741496vh + 1.3020833333333333vw);
+}
+
+.map-popup-close-button{
+    height: 90%;
+    width: 90%;
+    background-image: url("Images/Map Page Images/Close Button.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.map-popup-close-button{
+    cursor: pointer;
+}
+
+/* Map Content*/
+.map-popup-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3605442176870748vh;
+}
+
+/* Map Location */
+.map-location-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* height: 300px; */
+    /* width: 600px; */
+    height: calc(20.408163265306122vh + 9.765625vw);
+    /* width: calc(40.816326530612244vh + 19.53125vw); */
+}
+
+.map-img{
+    height: 90%;
+    width: 90%;
+}
+
+/* Location Header */
+.location-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+    gap: 0.3255208333333333vw;
+}
+
+/* Location Paragraph */
+.location-paragraph-container{
+    font-size: 90%;
+    text-align: center;
+    width: 80%;
+}
+
+ /* Footer */
+ footer{
+    width: 100%;
+    padding-top: 100px;
+    color: #ffff;
+    background-color: #000000;
+}
+
+#footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 40px; */
+    gap: 30%;
+    padding-bottom: 100px;
+    height: 27.210884353741495vh;
+}
+
+/* Footer main content*/
+#footer-paragraph-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: calc(70% + 0.2vw);
+}
+
+#footer-logo-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+}
+
+/* Footer Logo */
+/* .footer-logo{
+    height: 50%;
+    width: 75%;
+} */
+
+#cognosphere-logo{
+    width: 70%;
+}
+
+#rating-logo{
+    height: 80%;
+}
+
+#footer-jenshin-logo{
+    height: 50%;
+    width: 70%;
+}
+
+/* Footer Social Media Logo*/
+#footer-social-media-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.footer-social-media-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+.link-target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer owners */
+#footer-owners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D1C22;
+}
+
+#footer-owners-paragraph{
+    font-size: calc(70% + 0.2vw);
+    text-align: center;
+}
+
+/* Map Page Media Query */
+@media only screen and (max-width: 426px) {
+    
+    /* Nav Bar */
+    #nav-bar{
+        display: none;
+    }
+    
+    /* Map Page */
+    #first-white-rect{
+        height: 0;
+    }
+
+    .map-info-paragraph-container{
+        /* width: 400px; */
+        width: calc(25.252525252525253vh + 13.020833333333334vw);
+    }
+
+    /* Footer */
+    #rating-logo{
+        height: 60%;
+    }
+
+    .footer-social-media{
+        height: 25px;
+        width: 25px;
+    }
+
+    .footer-social-media-logo{
+        height: 80%;
+        width: 80%;
+    }
+}

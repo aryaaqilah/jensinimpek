@@ -4,370 +4,381 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map-page-style.css">
     <link rel="icon" href="Images/Other Images/jenshin logo white.svg">
     <title>Jenshin IMpekZ</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="nav-bar-content">
-    
-        </div>
+    <nav>
+        <div id="nav-bar"></div>
+        <div id="nav-burger"></div>
+    </nav>
+    <div id="main-div">
+        <section id="map-page">
+            <div class="white-rect" id="first-white-rect"></div>
+            <div class="map-container" id="tevyat-container">
+                <div class="map-content-container" id="tevyat-content-container">
+                    <div class="map-info-container" id="tevyat-info-container">
+                        <div class="map-header-txt">
+                            <h1 class="map-info-header" id="tevyat-info-header">TEVYAT</h2>
+                        </div>
+                        <div class="map-info-paragraph-container" id="tevyat-info-paragraph-container">
+                            <p class="map-info-paragraph" id="tevyat-info-paragraph">As the travelers took in their surroundings, Their mind refused to accept what their eyes were showing them. Somehow they’d traveled instantaneously to a world plucked straight from the pages of a Fantasy storybook. People were shopping at a busy open-air marketplace nearby, which consisted of rustic wooden stalls, booths, and tents. No cars were on the road, nor could they see any modern machinery of any kind. Women were clothed in long, coarsely woven dresses, while men wore cloth shirts and trousers with hide vests. Magicians and swordmen roamed the street, while monster lurked in the wild. The realization they were no longer on Earth began to sink in.
+                                We’re on <strong style="color: #FF3A44;">TEYVAT</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down-container">
+                    <img src="Images/Map Page Images/scroll-down-black.png" alt="" class="scroll-down-img">                    
+                </div>
+            </div>
+            <div class="white-rect"></div>
+            <div class="map-container" id="mondstadt-container">
+                <div class="map-content-container" id="mondstadt-content-container">
+                    <div class="map-logo-container">
+                        <img src="Images/Map Page Images/mondstadt logo.png" alt="" class="map-logo" id="mondstadt-logo">
+                    </div>
+                    <div class="map-info-container" id="mondstadt-info-container">
+                        <div class="map-info-header-container" id="mondstadt-info-header-container">
+                            <div class="map-header-txt">
+                                <h1 class="map-info-header" id="mondstadt-info-header">MONDSTADT</h2>
+                            </div>
+                            <div class="map-header-line">
+                                <span class="header-line"></span>
+                            </div>
+                        </div>
+                        <div class="map-info-paragraph-container" id="mondstadt-info-paragraph-container">
+                            <p class="map-info-paragraph" id="mondstadt-info-paragraph">A city of freedom that lies in the northeast of Teyvat. From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the Anemo God, Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of the lake</p>
+                        </div>
+                        <div class="map-info-button-container" id="mondstadt-info-button-container">
+                            <div class="more-information-txt">
+                                <button class="map-info-button" id="mondstadt-info-button" onclick="popup_mondstadt()"></button>
+                            </div>
+                            <div class="more-information-txt">
+                                <label for="map-info-button" class="info-txt">More Information</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down-container">
+                    <img src="Images/Map Page Images/scroll-down-white.png" alt="" class="scroll-down-img">                    
+                </div>
+            </div>
+            <div class="white-rect"></div>
+            <div class="map-container" id="liyue-container">
+                <div class="map-content-container" id="liyue-content-container">
+                    <div class="map-logo-container">
+                        <img src="Images/Map Page Images/liyue logo.png" alt="" class="map-logo" id="liyue-logo">
+                    </div>
+                    <div class="map-info-container" id="liyue-info-container">
+                        <div class="map-info-header-container" id="liyue-info-header-container">
+                            <div class="map-header-txt">
+                                <h1 class="map-info-header" id="liyue-info-header">LIYUE</h1>
+                            </div>
+                            <div class="map-header-line">
+                                <span class="header-line"></span>
+                            </div>
+                        </div>
+                        <div class="map-info-paragraph-container" id="liyue-info-paragraph-container">
+                            <p class="map-info-paragraph" id="liyue-info-paragraph">A bountiful harbor that lies in the east of Teyvat. Mountains stand tall and proud alongside the stone forest, that together with the open plains and lively rivers make up Liyue's bountiful landscape, which shows its unique beauty through each of the four seasons. Just how many gifts from the Geo God lie in wait amongst the rocks of Liyue's mountains?</p>
+                        </div>
+                        <div class="map-info-button-container" id="liyue-info-button-container">
+                            <div class="more-information-button">
+                                <button class="map-info-button" id="liyue-info-button" onclick="popup_liyue()"></button>
+                            </div>
+                            <div class="more-information-txt">
+                                <label for="map-info-button" class="info-txt">More Information</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-down-container">
+                        <img src="Images/Map Page Images/scroll-down-white.png" alt="" class="scroll-down-img">                    
+                    </div>
+                </div>
+            </div>
+            <div class="white-rect"></div>
+            <div class="map-container" id="inazuma-container">
+                <div class="map-content-container" id="inazuma-content-container">
+                    <div class="map-logo-container">
+                        <img src="Images/Map Page Images/inazuma logo.png" alt="" class="map-logo" id="inazuma-logo">
+                    </div>
+                    <div class="map-info-container" id="inazuma-info-container">
+                        <div class="map-info-header-container" id="inazuma-info-header-container">
+                            <div class="map-header-txt">
+                                <h1 class="map-info-header" id="inazuma-info-header">INAZUMA</h1>
+                            </div>
+                            <div class="map-header-line">
+                                <span class="header-line"></span>
+                            </div>
+                        </div>
+                        <div class="map-info-paragraph-container" id="inazuma-info-paragraph-container">
+                            <p class="map-info-paragraph" id="inazuma-info-paragraph">An Isolated Archipelago Far East of Teyvat. Overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. On winding shores and towering cliffs, and in forests and mountains full of secrets, witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.</p>
+                        </div>
+                        <div class="map-info-button-container" id="inazuma-info-button-container">
+                            <div class="more-information-button">
+                                <button class="map-info-button" id="inazuma-info-button" onclick="popup_inazuma()"></button>
+                            </div>
+                            <div class="more-information-txt">
+                                <label for="map-info-button" class="info-txt">More Information</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-down-container">
+                        <img src="Images/Map Page Images/scroll-down-white.png" alt="" class="scroll-down-img">                    
+                    </div>
+                </div>
+            </div>
+            <div class="white-rect"></div>
+            <div class="map-container" id="sumeru-container">
+                <div class="map-content-container" id="sumeru-content-container">
+                    <div class="map-logo-container">
+                        <img src="Images/Map Page Images/sumeru logo.png" alt="" class="map-logo" id="sumeru-logo">
+                    </div>
+                    <div class="map-info-container" id="sumeru-info-container">
+                        <div class="map-info-header-container" id="sumeru-info-header-container">
+                            <div class="map-header-txt">
+                                <h1 class="map-info-header" id="sumeru-info-header">SUMERU</h1>
+                            </div>
+                            <div class="map-header-line">
+                                <span class="header-line"></span>
+                            </div>
+                        </div>
+                        <div class="map-info-paragraph-container" id="sumeru-info-paragraph-container">
+                            <p class="map-info-paragraph" id="sumeru-info-paragraph">The city of scholars located in the west-central part of Teyvat. A fantastical nation of both lush rainforest and barren desert, where countless fruits of wisdom grow and are buried. Whether Travelers travel from afar through the forest to reach the academy city or delve deep into the desert to discover the historical ruins of the red desert, a wealth of valuable knowledge awaits them here.</p>
+                        </div>
+                        <div class="map-info-button-container" id="sumeru-info-button-container">
+                            <div class="more-information-button">
+                                <button class="map-info-button" id="sumeru-info-button" onclick="popup_sumeru()"></button>
+                            </div>
+                            <div class="more-information-txt">
+                                <label for="map-info-button" class="info-txt">More Information</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer-content">
+                <div id="footer-paragraph-container">
+                    <p>Jenshin IMpekz and The Jenshin IMpekZ Logo are Trademarks and/or Registered Trademarks of Cognosphere Corporation. 2023 Cognosphere Corporation, All Rights Reserved.</p>
+                </div>
+                <div id="footer-logo-main-container">
+                    <div class="footer-logo-container" id="cognosphere-container">
+                        <img src="Images/Other Images/hoyoverse image.png" alt="" class="footer-logo" id="cognosphere-logo">
+                    </div>
+                    <div class="footer-logo-container" id="rating-container">
+                        <img src="Images/Other Images/esrb label.png" alt="" class="footer-logo" id="rating-logo">
+                    </div>
+                    <div class="footer-logo-container" id="jenshin-container">
+                        <img src="Images/Other Images/jenshin logo white.svg" alt="" class="footer-logo" id="footer-jenshin-logo">
+                    </div>
+                </div>
+                <div id="footer-social-media-container">
+                    <div class="footer-social-media">
+                        <a href="https://hoyo.link/b7k1BCAd" target="_blank" class="link-target"><img src="Images/Other Images/youtube-logo.png" alt="" class="footer-social-media-logo" id="youtube-social-logo"></a>
+                    </div>
+                    <div class="footer-social-media">
+                        <a href="https://twitter.com/GenshinImpactID" target="_blank" class="link-target"><img src="Images/Other Images/twitter logo.png" alt="" class="footer-social-media-logo" id="twitter-social-logo"></a>
+                    </div>
+                    <div class="footer-social-media">
+                        <a href="https://hoyo.link/59k1BaAd" target="_blank" class="link-target"><img src="Images/Other Images/instagram-logo.png" alt=""class="footer-social-media-logo" id="insta-social-logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-owners">
+                <div id="footer-owners-paragraph">
+                    <p>Copyright © Abraham & Fauzan, All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div id="map-page-back"></div>
-    <div id="map-page">
-        <div id="map-main-div">
-            <div id="map-line">
-                <img src="Images/Map Page Images/map-line.svg" alt="map-line" style="width: 7.623989218328841vw;height: 440vh">
+    <div class="map-popup">
+        <div class="map-popup-container" id="mondstadt-popup-container">
+            <div class="map-popup-close-button-container">
+                <button class="map-popup-close-button" onclick="close_popup_mondstadt()"></button>
             </div>
-            <div class="maps-container" id="tevyat-container">
-                <div id="tevyat-text">
-                    <div id="tevyat-header" style="color: #FF3A44;">
-                        <h1>
-                            TEYVAT
-                        </h1>
-                    </div>
-                    <div id="tevyat-paragraph" style="width: 51.537433155080215vw;color: #1D1C22;">
-                        <p>
-                            As the travelers took in their surroundings, Their mind refused to accept what their eyes were showing them. Somehow they’d traveled instantaneously to a world plucked straight from the pages of a Fantasy storybook. People were shopping at a busy open-air marketplace nearby, which consisted of rustic wooden stalls, booths, and tents. No cars were on the road, nor could they see any modern machinery of any kind. Women were clothed in long, coarsely woven dresses, while men wore cloth shirts and trousers with hide vests. Magicians and swordmen roamed the street, while monster lurked in the wild.
-                            The realization they were no longer on Earth began to sink in.
-                            <br>We’re on <strong style="color: #FF3A44;">TEYVAT</strong>.
-                        </p>
-                    </div>
+            <div class="map-popup-header-container" id="mondstadt-popup-header-container">
+                <div class="map-popup-line-container">
+                    <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-left-line">
                 </div>
-                <div id="scroll-down-tevyat">
-                    <img src="Images/Map Page Images/Scroll down black.svg" alt="scroll-down-img" style="width:5.347593582887701vw;height:5.667506297229219vh;">
+                <div class="map-popup-header" id="mondstadt-popup-header">
+                    <h2>MONDSTADT</h2>
+                </div>
+                <div class="map-popup-line-container">
+                   <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-right-line">
                 </div>
             </div>
-            <div class="white-rectangle"></div>
-            <div class="maps-container" id="mondstadt-container">
-                <div class="main-content-container">
-                    <div class="map-text">
-                        <div class="map-header">
-                            <h1>
-                                MONDSTADT
-                            </h1>
-                        </div>
-                        <div class="map-paragraph">
-                            <p>
-                                A city of freedom that lies in the northeast of Teyvat. From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the Anemo God, Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of the lake.
-                            </p>
+            <div class="map-popup-content-container" id="mondstadt-popup-content-container">
+                <div class="map-location-container" id="dawn-winery-container">
+                    <div class="location-header-container" id="dawn-winery-header-container">
+                        <h3>Dawn Winery</h3>
+                        <div class="map-header-line">
+                            <span class="header-line"></span>
                         </div>
                     </div>
-                    <div class="more-information">
-                        <button class="more-information-button" id="more-information-button-mondstadt" onclick="popup_mondstadt()"></button>
-                        <p>
-                            More<br>Information
-                        </p>
+                <div class="map-img-container" id="dawn-winery-img-container">
+                    <img src="Images/Map Page Images/dawn winery img.png" alt="" class="map-img" id="dawn-winery-img">
+                </div>
+                <div class="location-paragraph-container" id="dawn-winery-paragraph-container">
+                    <p>Nestled in the land southwest of Mondstadt sits the winery that has passed down the legacy of Mondstadt's traditional wines and ciders for generations.The grapes grown here are used to produce a range of wines that are popular right across Teyvat.Every year's products are split, with a portion being sold locally within Mondstadt, the rest is sold off via the trade route that sits south of the city.</p>
+                </div>
+                </div>
+                <div class="map-location-container" id="cape-oath-container">
+                    <div class="location-header-container" id="cape-oath-header-container">
+                        <h3>Cape Oath</h3>
+                        <div class="map-header-line">
+                            <span class="header-line"></span>
+                        </div>
                     </div>
+                <div class="map-img-container" id="cape-oath-img-container">
+                    <img src="Images/Map Page Images/cape oath img.png" alt="" class="map-img" id="cape-oath-img">
                 </div>
-                <div class="scroll-down-map">
-                    <img src="Images/Map Page Images/Scroll down.svg" alt="scroll-down-img" style="width:5.347593582887701vw;height:5.667506297229219vh;">
+                <div class="location-paragraph-container" id="cape-oath-paragraph-container">
+                    <p>In the southeast corner of Mondstadt's surrounds lies a cape that borders with Galesong Hill.Legend has it two lovers made an oath to each other here and left behind a deeply touching story. To this day the area is still known to be popular amongst young lovebirds.Other than being a great vantage point for watching sunrises and sunsets, the drop in terrain makes it easy to see Windrise, which sits facing the sea.</p>
                 </div>
-                <div class="map-logo">
-                    <img src="Images/Map Page Images/mondstadt logo.png" alt="mondstadt-logo" style="height: 50.50vh;width: 100%;opacity: 30%;">
                 </div>
             </div>
-            <div class="white-rectangle"></div>
-            <div class="maps-container" id="liyue-container">
-                <div class="main-content-container">
-                    <div class="map-text">
-                        <div class="map-header">
-                            <h1>
-                                LIYUE
-                            </h1>
-                        </div>
-                        <div class="map-paragraph">
-                            <p>
-                                A bountiful harbor that lies in the east of Teyvat. Mountains stand tall and proud alongside the stone forest, that together with the open plains and lively rivers make up Liyue's bountiful landscape, which shows its unique beauty through each of the four seasons. Just how many gifts from the Geo God lie in wait amongst the rocks of Liyue's mountains?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="more-information">
-                        <button class="more-information-button" id="more-information-button-liyue" onclick="popup_liyue()"></button>
-                        <p>
-                            More<br>Information
-                        </p>
-                    </div>
+        </div>
+        <div class="map-popup-container" id="liyue-popup-container">
+            <div class="map-popup-close-button-container">
+                <button class="map-popup-close-button" onclick="close_popup_liyue()"></button>
+            </div>
+            <div class="map-popup-header-container" id="liyue-popup-header-container">
+                <div class="map-popup-line-container">
+                    <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-left-line">
                 </div>
-                <div class="scroll-down-map">
-                    <img src="Images/Map Page Images/Scroll down.svg" alt="scroll-down-img" style="width:5.347593582887701vw;height:5.667506297229219vh;">
+                <div class="map-popup-header" id="liyue-popup-header">
+                    <h2>LIYUE</h2>
                 </div>
-                <div class="map-logo">
-                    <img src="Images/Map Page Images/liyue logo.png" alt="liyue-logo" style="height: 50.50vh;width: 100%;opacity: 30%;">
+                <div class="map-popup-line-container">
+                    <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-right-line">
                 </div>
             </div>
-            <div class="white-rectangle"></div>
-            <div class="maps-container" id="inazuma-container">
-                <div class="main-content-container">
-                    <div class="map-text">
-                        <div class="map-header">
-                            <h1>
-                                INAZUMA
-                            </h1>
-                        </div>
-                        <div class="map-paragraph">
-                            <p>
-                                An Isolated Archipelago Far East of Teyvat. Overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. On winding shores and towering cliffs, and in forests and mountains full of secrets, witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="more-information">
-                        <button class="more-information-button" id="more-information-button-inazuma" onclick="popup_inazuma()"></button>
-                        <p>
-                            More<br>Information
-                        </p>
-                    </div>
-                </div>
-                <div class="scroll-down-map">
-                    <img src="Images/Map Page Images/Scroll down.svg" alt="scroll-down-img" style="width:5.347593582887701vw;height:5.667506297229219vh;">
-                </div>
-                <div class="map-logo">
-                    <img src="Images/Map Page Images/inazuma logo.png" alt="inazuma-logo" style="height: 50.50vh;width: 100%;opacity: 30%;">
-                </div>
-            </div>
-            <div class="white-rectangle"></div>
-            <div class="maps-container" id="sumeru-container">
-                <div class="main-content-container">
-                    <div class="map-text">
-                        <div class="map-header">
-                            <h1>
-                                SUMERU
-                            </h1>
-                        </div>
-                        <div class="map-paragraph">
-                            <p>
-                                The city of scholars located in the west-central part of Teyvat. A fantastical nation of both lush rainforest and barren desert, where countless fruits of wisdom grow and are buried. Whether Travelers travel from afar through the forest to reach the academy city or delve deep into the desert to discover the historical ruins of the red desert, a wealth of valuable knowledge awaits them here.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="more-information">
-                        <button class="more-information-button" id="more-information-button-sumeru" onclick="popup_sumeru()"></button>
-                        <p>
-                            More<br>Information
-                        </p>
-                    </div>
-                </div>
-                <div class="map-logo">
-                    <img src="Images/Map Page Images/sumeru logo.png" alt="sumeru-logo" style="height: 50.50vh;width: 100%;opacity: 30%;">
-                </div>
-            </div>
-            <footer>
-                <div id="footer-content">
-                    <div id="footer-content-container">
-                        <div id="footer-content-pg">
-                            <p>JENSHIN IMPEKZ AND THE JENSHIN IMPEKZ LOGO ARE TRADEMARKS AND/OR REGISTERED TRADEMARKS OF COGNOSPHERE CORPORATION. 2023 COGNOSPHERE CORPORATION, ALL RIGHTS RESERVED.</p>
-                        </div>
-                        <div id="footer-content-logo">
-                            <div id="footer-cognosphere-logo">
-                                <img src="Images/Other Images/hoyoverse image.png" alt="" style="height: 6.824242424242424vh;width: 19.53125vw;">
-                            </div>
-                            <div id="footer-esrb-logo">
-                                <img src="Images/Other Images/esrb label.png" alt="" style="height: 16.076767676767677vh;width: 13.020833333333334vw;">
-                            </div>
-                            <div id="footer-jenshin-logo" style="height: 6.824242424242424vh;width: 19.53125vw;">
-                                <img src="Images/Other Images/jenshin logo white.svg" alt="" style="height: 6.818181818181818vh;width: 8.70625vw;">
+            <div class="map-popup-content-container" id="liyue-popup-content-container">
+                <div class="map-location-container" id="harbor-container">
+                        <div class="location-header-container" id="harbor-header-container">
+                            <h3>Harbor</h3>
+                            <div class="map-header-line">
+                                <span class="header-line"></span>
                             </div>
                         </div>
+                    <div class="map-img-container" id="harbor-img-container">
+                        <img src="Images/Map Page Images/harbor img.png" alt="" class="map-img" id="harbor-img">
+                    </div>
+                    <div class="location-paragraph-container" id="harbor-paragraph-container">
+                        <p>The establishment of the harbor kicked off Liyue's seafaring trade. As Teyvat's largest market harbor, the sheer amount of goods that flow to and from it is simply incomparable for other ports.Every year during the Lantern Rite you can see thousands of lanterns ascend into the night sky — a Liyue event that you can't afford to miss.</p>
                     </div>
                 </div>
-                <div id="footer-owners">
-                    <div id="footer-owners-pg">
-                        <p>Copyright © Abraham & Fauzan, All Right Reserved</p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div>
-    <div id="map-popup-div">
-        <div class="map-popup" id="map-popup-mondstadt">
-            <div class="map-popup-header">
-                <div class="map-popup-close">
-                    <button class="map-popup-close-button" onclick="close_popup_mondstadt()"></button>
-                </div>
-                <div class="map-popup-header-text">
-                    <p> MONDSTADT </p>
-                </div>
-            </div>
-            <div class="map-popup-container">
-                <div class="map-popup-content">
-                    <div class="map-popup-content-headers">
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;">
-                            DAWN WINERY
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
+                <div class="map-location-container" id="mttianheng-container">
+                    <div class="location-header-container" id="mttianheng-header-container">
+                        <h3>Mt. Tianheng</h3>
+                        <div class="map-header-line">
+                            <span class="header-line"></span>
                         </div>
                     </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/dawn winery img.svg" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
+                    <div class="map-img-container" id="mttianheng-img-container">
+                        <img src="Images/Map Page Images/mttianheng img.png" alt="" class="map-img" id="mttianheng-img">
                     </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            Nestled in the land southwest of Mondstadt sits the winery that has passed down the legacy of Mondstadt's traditional wines and ciders for generations. The grapes grown here are used to produce a range of wines that are popular right across Teyvat. Every year's products are split, with a portion being sold locally within Mondstadt, the rest is sold off via the trade route that sits south of the city.
-                        </p>
-                    </div>
-                    <div class="map-popup-content-headers">
-                        <div class="map-popup-content-headers-line"></div>
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;">
-                            CAPE OATH
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
-                        </div>
-                    </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/cape oath img.png" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
-                    </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            In the southeast corner of Mondstadt's surrounds lies a cape that borders with Galesong Hill. Legend has it two lovers made an oath to each other here and left behind a deeply touching story. To this day the area is still known to be popular amongst young lovebirds. Other than being a great vantage point for watching sunrises and sunsets, the drop in terrain makes it easy to see Windrise, which sits facing the sea.
-                        </p>
+                    <div class="location-paragraph-container" id="mttianheng-paragraph-container">
+                        <p>The establishment of the harbor kicked off Liyue's seafaring trade. As Teyvat's largest market harbor, the sheer amount of goods that flow to and from it is simply incomparable for other ports.Every year during the Lantern Rite you can see thousands of lanterns ascend into the night sky — a Liyue event that you can't afford to miss.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="map-popup" id="map-popup-liyue">
-            <div class="map-popup-header">
-                <div class="map-popup-close">
-                    <button class="map-popup-close-button" onclick="close_popup_liyue()"></button>
+        <div class="map-popup-container" id="inazuma-popup-container">
+            <div class="map-popup-close-button-container">
+                <button class="map-popup-close-button" onclick="close_popup_inazuma()"></button>
+            </div>
+            <div class="map-popup-header-container" id="inazuma-popup-header-container">
+                <div class="map-popup-line-container">
+                    <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-left-line">
                 </div>
-                <div class="map-popup-header-text">
-                    <p> LIYUE </p>
+                <div class="map-popup-header" id="inazuma-popup-header">
+                    <h2>INAZUMA</h2>
+                </div>
+                <div class="map-popup-line-container">
+                    <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-right-line">
                 </div>
             </div>
-            <div class="map-popup-container">
-                <div class="map-popup-content">
-                    <div class="map-popup-content-headers">
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
-                            HARBOR
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
+            <div class="map-popup-content-container" id="inazuma-popup-content-container">
+                <div class="map-location-container" id="inazumacity-container">
+                    <div class="location-header-container" id="inazumacity-header-container">
+                        <h3>Inazuma City</h3>
+                        <div class="map-header-line">
+                            <span class="header-line"></span>
                         </div>
                     </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/harbor img.png" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
+                    <div class="map-img-container" id="inazumacity-img-container">
+                        <img src="Images/Map Page Images/inazuma city img.png" alt="" class="map-img" id="inazumacity-img">
                     </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            The establishment of the harbor kicked off Liyue's seafaring trade. As Teyvat's largest market harbor, the sheer amount of goods that flow to and from it is simply incomparable for other ports.Every year during the Lantern Rite you can see thousands of lanterns ascend into the night sky — a Liyue event that you can't afford to miss.
-                        </p>
-                    </div>
-                    <div class="map-popup-content-headers">
-                        <div class="map-popup-content-headers-line"></div>
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;">
-                            MT. TIANHENG
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
-                        </div>
-                    </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/mttianheng img.png" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
-                    </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            The pride of the mountain range that shelters Liyue Harbor from the west, acting as a natural shield against any enemies that may come that way.There are uncountable records of wars both big and small whereby enemies have been blocked by this barrier. As such you can still see ancient ruins of city walls, forts, and defensive structures.Liyue's earliest mining operations are also believed to have started in this area.                        </p>
+                    <div class="location-paragraph-container" id="inazumacity-paragraph-container">
+                        <p>Inazuma's most lively and prosperous area, where most of Inazuma's population lives. From Hanamizaka to the streets of the city, you can follow the trail to visit local traditional shops and sample Inazuma specialties. The Tenryou Commission is also located in the city, governing matters concerning public order and security, as well as the Shogunate's military affairs. At the top of Inazuma City is Tenshukaku, where the Raiden Shogun resides and rules over Inazuma.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="map-popup" id="map-popup-inazuma">
-            <div class="map-popup-header">
-                <div class="map-popup-close">
-                    <button class="map-popup-close-button" onclick="close_popup_inazuma()"></button>
-                </div>
-                <div class="map-popup-header-text">
-                    <p> INAZUMA </p>
-                </div>
-            </div>
-            <div class="map-popup-container">
-                <div class="map-popup-content">
-                    <div class="map-popup-content-headers">
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;">
-                            INAZUMA CITY
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
+                <div class="map-location-container" id="tatarasuna-container">
+                    <div class="location-header-container" id="tatarasuna-header-container">
+                        <h3>Tatarasuna, Kannazuka</h3>
+                        <div class="map-header-line">
+                            <span class="header-line"></span>
                         </div>
                     </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/inazuma city img.png" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
+                    <div class="map-img-container" id="tatarasuna-img-container">
+                        <img src="Images/Map Page Images/tatarasuna img.png" alt="" class="map-img" id="tatarasuna-img">
                     </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            Inazuma's most lively and prosperous area, where most of Inazuma's population lives. From Hanamizaka to the streets of the city, you can follow the trail to visit local traditional shops and sample Inazuma specialties. The Tenryou Commission is also located in the city, governing matters concerning public order and security, as well as the Shogunate's military affairs. At the top of Inazuma City is Tenshukaku, where the Raiden Shogun resides and rules over Inazuma.
-                        </p>
-                    </div>
-                    <div class="map-popup-content-headers">
-                        <div class="map-popup-content-headers-line"></div>
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;">
-                            TATARASUNA, KANNAZUKA
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
-                        </div>
-                    </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/tatarasuna img.png" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
-                    </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            Legend has it that Kannazuka means "the hill where no gods reside." Until now, Kannazuka is disputed territory between the Shogunate and Sangonomiya. Kannazuka has a mountainous terrain with high steep cliffs. In the midst of the rocky outcrops lies Mikage Furnace, the largest smelting facility in Inazuma. This is where Jade Steel is made, a rare material that is used in Inazuma to forge swords.
-                        </p>
+                    <div class="location-paragraph-container" id="tatarasuna-paragraph-container">
+                        <p>Legend has it that Kannazuka means "the hill where no gods reside." Until now, Kannazuka is disputed territory between the Shogunate and Sangonomiya. Kannazuka has a mountainous terrain with high steep cliffs. In the midst of the rocky outcrops lies Mikage Furnace, the largest smelting facility in Inazuma. This is where Jade Steel is made, a rare material that is used in Inazuma to forge swords.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="map-popup" id="map-popup-sumeru">
-            <div class="map-popup-header">
-                <div class="map-popup-close">
+        <div class="map-popup-container" id="sumeru-popup-container">
+                <div class="map-popup-close-button-container">
                     <button class="map-popup-close-button" onclick="close_popup_sumeru()"></button>
                 </div>
-                <div class="map-popup-header-text">
-                    <p> SUMERU </p>
-                </div>
-            </div>
-            <div class="map-popup-container">
-                <div class="map-popup-content">
-                    <div class="map-popup-content-headers">
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;">
-                            GANDHARVA VILLE
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
-                        </div>
+                <div class="map-popup-header-container" id="sumeru-popup-header-container">
+                    <div class="map-popup-line-container">
+                        <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-left-line">
                     </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/gandharva img.png" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
+                    <div class="map-popup-header" id="sumeru-popup-header">
+                        <h2>SUMERU</h2>
                     </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            The city above the forest. "The city of wisdom is ours, as is the forest of ignorance. Atop the tree lies the remnants of the kingdom of lost dreams."
-                        </p>
-                    </div>
-                    <div class="map-popup-content-headers">
-                        <div class="map-popup-content-headers-line"></div>
-                        <p style="margin-top: 8.2070vh; margin-bottom: 1.641vh;">
-                            PARDIS DHYAI
-                        </p>
-                        <div class="map-popup-content-headers-line">
-                            <img src="Images/Map Page Images/map popup Line .svg" alt="" style="padding-bottom: 2.1565vh;">
-                        </div>
-                    </div>
-                    <div class="map-popup-content-img">
-                        <img src="Images/Map Page Images/pardis img.png" alt="" style="height: 49.14393939393939vh;width: 45.572916666666664vw;">
-                    </div>
-                    <div class="map-popup-content-desc">
-                        <p>
-                            The garden of deep thought. Countless flowers lie within the garden, each more lovely than the most beautiful crystalfly. This is the paradise of people of goodwill.
-                        </p>
+                    <div class="map-popup-line-container">
+                        <img src="Images/Map Page Images/left-line.png" alt="" class="map-popup-right-line">
                     </div>
                 </div>
-            </div>
+                <div class="map-popup-content-container" id="sumeru-popup-content-container">
+                    <div class="map-location-container" id="gandharva-container">
+                        <div class="location-header-container" id="gandharva-header-container">
+                            <h3>Gandharva Ville</h3>
+                            <div class="map-header-line">
+                                <span class="header-line"></span>
+                            </div>
+                        </div>
+                        <div class="map-img-container" id="gandharva-img-container">
+                            <img src="Images/Map Page Images/gandharva img.png" alt="" class="map-img" id="gandharva-img">
+                        </div>
+                        <div class="location-paragraph-container" id="gandharva-paragraph-container">
+                            <p>The city above the forest."The city of wisdom is ours, as is the forest of ignorance. Atop the tree lies the remnants of the kingdom of lost dreams."</p>
+                        </div>
+                    </div>
+                    <div class="map-location-container" id="pardis-container">
+                        <div class="location-header-container" id="pardis-header-container">
+                            <h3>Pardis Dhyai</h3>
+                            <div class="map-header-line">
+                                <span class="header-line"></span>
+                            </div>
+                        </div>
+                        <div class="map-img-container" id="pardis-img-container">
+                            <img src="Images/Map Page Images/pardis img.png" alt="" class="map-img" id="pardis-img">
+                        </div>
+                        <div class="location-paragraph-container" id="pardis-paragraph-container">
+                            <p>The garden of deep thought. Countless flowers lie within the garden, each more lovely than the most beautiful crystalfly. This is the paradise of people of goodwill.</p>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    <script src="map-page-script.js"></script>
+<script src="map-page-script.js"></script>
 </body>
 </html>

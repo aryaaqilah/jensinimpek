@@ -1,0 +1,384 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url("Images/About Us Page/background.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Navigation */
+    nav{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    #nav-bar{
+        height: 50px;
+        background-color: #1D1C22;
+    }
+
+    /* Main Content */
+    #about-main{
+        width: 100%;
+        padding-bottom: 10vh;
+    }
+
+    #nav-bar-link{
+        display: inline;
+    }
+
+    #nav-bar-link-list{
+        list-style-type: none;
+    }
+
+    /* Jumbotron */
+    #about-jumbotron{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("Images/About Us Page/about\ jumbotron\ Back.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 120.6727272727273vh;
+    }
+
+    #about-jumbotron-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3.811868686868687vh;
+    }
+
+    #about-jumbotron-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4088541666666665vw;
+    }
+
+    .about-game-icon{
+        height: calc(2.525252525252525vh + 1.3020833333333333vw);
+        width: calc(2.4vh + 1.3020833333333333vw);
+    }
+
+    #about-jumbotron-desc{
+        color: white;
+        text-align: center;
+        width: 68.01822916666667vw;
+    }
+    
+    /* Content */
+    #about-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+        padding-top: 5vh;
+    }
+    
+    #about-content-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #feature-line{
+        display: flex;
+        height: 1px;
+        width: 80%;
+        background-color: #FF3A44;
+    }
+    
+    .about-feature-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 90%;
+    }
+    
+    .feature-content-container{
+        width: 40%;
+    }
+
+    .feature-img-container{
+        width: 80%;
+    }
+
+    .feature-img{
+        width: 100%;
+        box-shadow: 10px 10px 10px 0px #000000BF;
+    }
+
+    .feature-desc-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(18.939393939393938vh + 9.765625vw);
+        background-image: url("Images/About Us Page/about\ content\ background.png");
+        background-size: 110% calc(18.939393939393938vh + 9.765625vw);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        font-size: 80%;
+    }
+
+    #feature-header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14pt;
+        color: white;
+    }
+    
+
+    /* Links */
+    #about-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #about-links-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 13.88888888888889vh;
+    }
+
+    #about-links-txt{
+        text-align: center;
+        color: white;
+        gap: 4.42020202020202vh;
+        font-size: calc(3.0101010101010102vh + 1.5208333333333334vw);
+    }
+
+    #about-links-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 0.6510416666666666vw;
+    }
+
+    .app-button {
+        height: calc(2.525252525252525vh + 2.5vw);
+        width: calc(8.712121212121213vh + 8vw);
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #A6A6A6;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .app-button:hover{
+        cursor: pointer;
+        transition: 200ms;
+        transform: scale(1.02);
+    }
+
+    #google-button{
+        background-image: url("Images/About Us Page/google.png");
+    }
+    
+    #google-button:hover{
+        background-image: url("Images/About Us Page/googlehover.png");
+    }
+    
+    #app-store-button{
+        background-image: url("Images/About Us Page/apple.png");
+    }
+    
+    #app-store-button:hover{
+        background-image: url("Images/About Us Page/applehover.png");
+    }
+    
+    #windows-button{
+        background-image: url("Images/About Us Page/windows.png");
+    }
+    
+    #windows-button:hover{
+        background-image: url("Images/About Us Page/windowshover.png");
+    }
+
+    /* Footer */
+    footer{
+        width: 100%;
+        padding-top: 100px;
+        color: #ffff;
+        background-color: #000000;
+    }
+
+    #footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* gap: 40px; */
+        gap: 30%;
+        padding-bottom: 100px;
+        height: 27.210884353741495vh;
+    }
+
+    /* Footer main content*/
+    #footer-paragraph-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: calc(70% + 0.2vw);
+    }
+
+    #footer-logo-main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer-logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 300px;
+    }
+
+    /* Footer Logo */
+    /* .footer-logo{
+        height: 50%;
+        width: 75%;
+    } */
+
+    #cognosphere-logo{
+        width: 70%;
+    }
+
+    #rating-logo{
+        height: 80%;
+    }
+
+    #footer-jenshin-logo{
+        height: 50%;
+        width: 70%;
+    }
+
+    /* Footer Social Media Logo*/
+    #footer-social-media-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 35px;
+        background-color: white;
+        border-radius: 20px;
+        border-style: none;
+    }
+
+    .footer-social-media-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+    }
+
+    .link-target{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Footer owners */
+    #footer-owners{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1D1C22;
+    }
+
+    #footer-owners-paragraph{
+        font-size: calc(70% + 0.2vw);
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 555px) {
+        #feature-header-container{
+            font-size: 10pt;
+        }
+
+        #about-content-main{
+            gap: 70px;
+        }
+
+        .feature-desc-container {
+            font-size: 60%;
+        }
+
+        .feature-img{
+            height: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 426px) {
+        #nav-bar{
+            display: none;
+        }
+    
+        #feature-header-container{
+            font-size: 8pt;
+        }
+
+        .about-feature-container{
+            width: 80%;
+        }
+
+        #about-content-main{
+            gap: 50px;
+        }
+
+        .feature-desc-container {
+            font-size: 55%;
+        }
+
+        .feature-img-container{
+            width: 70%;
+        }
+    
+        #rating-logo{
+            height: 60%;
+        }
+    
+        .footer-social-media{
+            height: 25px;
+            width: 25px;
+        }
+    
+        .footer-social-media-logo{
+            height: 80%;
+            width: 80%;
+        }
+    }

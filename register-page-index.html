@@ -5,338 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/Other Images/jenshin logo white.svg">
+    <link rel="stylesheet" href="register-page-style.css">
     <title>Jenshin IMpekZ</title>
 </head>
 <body>
     <nav>
-        <div id="nav-bar-container">
-            <div id="nav-bar-logo">
-                <img src="Images/Other Images/jenshin logo gold.svg" alt="" style="height:  5.098989898989899vh;width: 6.510416666666667vw;">
-            </div>
-            <div id="nav-bar-link">
-                <div id="nav-bar-link-list">
-                    <div><a href="#">Home</a></div>
-                    <div><a href="#">Characters</a></div>
-                    <div><a href="#">Map</a></div>
-                    <div><a href="#">About Us</a></div>
-                </div>
-            </div>
-            <div id="nav-bar-buttons">
-                <div id="nav-bar-login-link">
-                    <a href="">Login</a>
-                </div>
-                <div id="nav-bar-login-download">
-                    <button id="nav-bar-login-download-button">DOWNLOAD</button>
-                </div>
-            </div>
-        </div>
+        <div id="nav-bar"></div>
+        <div id="nav-burger"></div>
     </nav>
-    <div id="register-main-page">
-        <div id="register-page-content-container">
-            <div id="register-page-content-img">
-                <div id="register-page-content-img-outline">
-                    <img src="Images/About Us Page/Outline.png" alt="" style="height: 54.36868686868686vh;width: 24.440104166666664vw;">
+    <section id="register-page">
+        <div id="register-page-container">
+            <div class="register-page-content-container" id="container-img">
+                <div id="register-page-content-img">
+                    <img src="Images/Other Images/jenshin logo white.svg" alt="" class="jenshin-logo">
                 </div>
             </div>
-            <div id="register-page-content-body">
-                <div id="register-page-content-body-container">
-                    <div id="register-page-content-header">
-                        <p style="color: white;">REGISTER</p>
-                    </div>
-                    <div id="register-page-content-fields">
-                        <form name="register-form" id="register-form">
-                            <div class="alert-container">
-                                <input type="text" name="username" placeholder="Username" class="register-form-txt-field" id="register-form-user">
-                                <span role="alert" class="alert-txt" id="username-invalid-alert"> *Username cannot be empty and must be less than 20 characters</span>
+            <div id="register-page-rect">
+                <div class="register-page-content-container">
+                    <div id="register-page-content-fields-container">
+                        <div id="register-fields-container-logo">
+                             <img src="Images/Other Images/jenshin logo white.svg" alt="" class="jenshin-logo" id="jenshin-fields-logo">
+                        </div>
+                        <div id="register-fields-header-container">
+                            <h2>REGISTER</h2>
+                        </div>
+                        <div id="register-fields-container">
+                            <form name="register-form" id="register-form">                                
+                                <div class="register-field" id="register-username">
+                                    <input type="text" placeholder="Username" name="Username" class="txt-field" id="username">
+                                    <span class="invalid-alert" id="invalid-username">*username cannot be empty and must be between 1-20 char</span>
+                                </div>
+                                <div class="register-field" id="register-password">
+                                    <input type="password" placeholder="Password" name="Password" class="txt-field" id="password">
+                                    <span class="invalid-alert" id="invalid-password">*password cannot be empty and must be more than 8 char</span>
+                                </div>
+                                <div class="register-field" id="register-email">
+                                    <input type="email" placeholder="Email" name="Email" class="txt-field" id="email">
+                                    <span class="invalid-alert" id="invalid-email">*email is invalid</span>
+                                </div>
+                                <div class="register-field" id="register-age">
+                                    <input type="number" placeholder="Age" name="Age" min="1" max="99" class="txt-field" id="age">
+                                    <span class="invalid-alert" id="invalid-age">*minimum age is 12</span>
+                                </div>
+                                <div id="register-terms">
+                                    <input type="checkbox" name="Terms" id="terms">
+                                    <label for="Terms" id="terms-txt">I have read and agree to <a href="https://url1.io/s/eqvoa" target="_blank">Terms of Service</a> & <a href="https://url1.io/s/eqvoa" target="_blank">Privacy Policy</a></label>
+                                </div>
+                                <div id="register-submit">
+                                    <input type="submit" value="SUBMIT" id="submit-button" onclick="validate_form()">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="register-app-button-container">
+                            <div class="app-button-container">
+                                <button class="app-button" id="google-button" onclick="open_login_page()"></button>
+                                <label for="app-button">Google</label>
                             </div>
-                            <div class="alert-container">
-                                <input type="password" name="password" placeholder="Password" class="register-form-txt-field" id="register-form-pass">
-                                <span role="alert" class="alert-txt" id="password-invalid-alert"> *Password cannot be empty and must be more than 8 characters</span>
+                            <div class="app-button-container">
+                                <button class="app-button" id="twitter-button" onclick="open_login_page()"></button>
+                                <label for="app-button">Twitter</label>
                             </div>
-                            <div class="alert-container">
-                                <input type="email" name="email" placeholder="Email" class="register-form-txt-field" id="register-form-email">
-                                <span role="alert" class="alert-txt" id="email-invalid-alert"> *Email is invalid</span>
+                            <div class="app-button-container">
+                                <button class="app-button" id="apple-button" onclick="open_login_page()"></button>
+                                <label for="app-button">Apple</label>
                             </div>
-                            <div class="alert-container">
-                                <input type="number" min="1" max="999" name="age" placeholder="Age" class="register-form-txt-field" id="register-form-age">
-                                <span role="alert" class="alert-txt" id="age-invalid-alert"> *Age is invalid, minimum age is 13</span>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="agreement" id="register-form-agreement">
-                                <label for="agreement" id="agreement-txt">i have read & agree to the <a href="https://account.hoyoverse.com/#/about/userAgreement?lang=en-us" target="_blank">Terms Service</a> & <a href="https://account.hoyoverse.com/#/about/privacy?lang=en-us" target="_blank">Privacy Policy</a></label>
-                            </div>
-                            <input type="submit" id="register-form-button" value="REGISTER">
-                        </form>
-                    </div>
-                    <div id="register-link">
-                        <p style="color: white;">Already Have an Account? <a href="login-page-index.html">Login Here</a></p>
+                        </div>
+                        <div id="register-link">
+                            <p>Have an Account? <a href="login-page-index.html">Login here</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <footer>
         <div id="footer-content">
-            <div id="footer-content-container">
-                <div id="footer-content-pg">
-                    <p>JENSHIN IMPEKZ AND THE JENSHIN IMPEKZ LOGO ARE TRADEMARKS AND/OR REGISTERED TRADEMARKS OF COGNOSPHERE CORPORATION. 2023 COGNOSPHERE CORPORATION, ALL RIGHTS RESERVED.</p>
+            <div id="footer-paragraph-container">
+                <p>Jenshin IMpekz and The Jenshin IMpekZ Logo are Trademarks and/or Registered Trademarks of Cognosphere Corporation. 2023 Cognosphere Corporation, All Rights Reserved.</p>
+            </div>
+            <div id="footer-logo-main-container">
+                <div class="footer-logo-container" id="cognosphere-container">
+                    <img src="Images/Other Images/hoyoverse image.png" alt="" class="footer-logo" id="cognosphere-logo">
                 </div>
-                <div id="footer-content-logo">
-                    <div id="footer-cognosphere-logo">
-                        <img src="Images/Other Images/hoyoverse image.png" alt="" style="height: 6.824242424242424vh;width: 19.53125vw;">
-                    </div>
-                    <div id="footer-esrb-logo">
-                        <img src="Images/Other Images/esrb label.png" alt="" style="height: 16.076767676767677vh;width: 13.020833333333334vw;">
-                    </div>
-                    <div id="footer-jenshin-logo" style="height: 6.824242424242424vh;width: 19.53125vw;">
-                        <img src="Images/Other Images/jenshin logo white.svg" alt="" style="height: 6.818181818181818vh;width: 8.70625vw;">
-                    </div>
+                <div class="footer-logo-container" id="rating-container">
+                    <img src="Images/Other Images/esrb label.png" alt="" class="footer-logo" id="rating-logo">
+                </div>
+                <div class="footer-logo-container" id="jenshin-container">
+                    <img src="Images/Other Images/jenshin logo white.svg" alt="" class="footer-logo" id="footer-jenshin-logo">
+                </div>
+            </div>
+            <div id="footer-social-media-container">
+                <div class="footer-social-media">
+                    <a href="https://hoyo.link/b7k1BCAd" target="_blank" class="link-target"><img src="Images/Other Images/youtube-logo.png" alt="" class="footer-social-media-logo" id="youtube-social-logo"></a>
+                </div>
+                <div class="footer-social-media">
+                    <a href="https://twitter.com/GenshinImpactID" target="_blank" class="link-target"><img src="Images/Other Images/twitter logo.png" alt="" class="footer-social-media-logo" id="twitter-social-logo"></a>
+                </div>
+                <div class="footer-social-media">
+                    <a href="https://hoyo.link/59k1BaAd" target="_blank" class="link-target"><img src="Images/Other Images/instagram-logo.png" alt=""class="footer-social-media-logo" id="insta-social-logo"></a>
                 </div>
             </div>
         </div>
         <div id="footer-owners">
-            <div id="footer-owners-pg">
+            <div id="footer-owners-paragraph">
                 <p>Copyright © Abraham & Fauzan, All Right Reserved</p>
             </div>
         </div>
     </footer>
 </body>
-<style>
-    *{
-        margin: 0;
-    }
-
-    /* Navbar */
-    nav{
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10.1010101010101vh;
-        width: 100%;
-        background-color: #1D1C22;
-        z-index: 999;
-    }
-
-    #nav-bar-logo{
-        padding-left: 2.0833333333333335vw;
-    }
-
-    #nav-bar-link-list{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1.8885416666666666vw;
-    }
-
-    #nav-bar-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 26.822916666666668vw;
-    }
-
-    #nav-bar-buttons{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.9770833333333333vw;
-    }
-
-    #nav-bar-login-download-button{
-        height: 10.1010101010101vh;
-        width: 14.648958333333333vw;
-        font-weight: bold;
-        font-size: 2.525252525252525vh;
-        color: white;
-        background-color: #FF3A44;
-        border: none;
-    }
-
-    /* Login Page Main */
-    #register-main-page{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-        background-image: url("Images/Login Page Images/login\ page\ back.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #register-page-content-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #register-page-content-img{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 58.28282828282828vh;
-        width: 26.1328125vw;
-        background-image: url("Images/Login Page Images/login\ page\ img.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #register-page-content-img-outline{
-        position: absolute;
-    }
-
-    #register-page-content-body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 58.28282828282828vh;
-        width: 33.1328125vw;
-        background-color: #00000080;
-    }
-
-    #register-page-content-body-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2.83838383838384vh;
-    }
-
-    #register-page-content-header{
-        font-size: 4.05050505050505vh;
-        font-weight: bold;
-    }
-
-    .register-form-txt-field{
-        height: 3.313131313131313vh;
-        width: 18.041666666666668vw;
-        padding: 0.6313131313131313vh 0.6510416666666666vw 0.6313131313131313vh 0.6510416666666666vw;
-        border-style: solid;
-        border-color: black;
-        border-width: 1.8px;
-        border-radius: 20px;
-    }
-    
-    #username-invalid-alert{
-        opacity: 0;
-    }
-
-    #password-invalid-alert{
-        opacity: 0;
-    }
-
-    #email-invalid-alert{
-        opacity: 0;
-    }
-
-    #age-invalid-alert{
-        opacity: 0;
-    }
-
-    .alert-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5vh;
-    }
-    
-    #agreement-txt{
-        color: white;
-        font-size: 2vh; 
-    }
-
-    .alert-txt{
-        font-weight: bold;
-        color: red; 
-        font-size: 1.7vh;
-    }
-
-    #register-form-button{
-        height: 4.41919191919192vh;
-        width: 9.765625vw;
-        font-weight: bold;
-        color: white;
-        background-color: #FF3A44;
-        border-style: solid;
-        border-color: black;
-        border-width: 1.8px;
-        border-radius: 5px;
-        transition: 200ms;
-    }
-
-    #register-form-button:hover{
-        cursor: pointer;
-        background-color: #F4898F;
-        transform: scale(1.1);
-    }
-    
-    #register-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.787878787878788vh;
-    }
-
-    #register-form-age{
-        width: 3.5vw;
-    }
-
-    #register-link{
-        font-size: 2vh;
-    }
-    
-    /* Footer */
-    #footer-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        height: 46.96969696969697vh;
-        width: 100%;
-    }
-
-    #footer-content-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 7.703030303030303vh;
-    }
-
-    #footer-content-pg{
-        text-align: center;
-        font-size: 1.893939393939394vh;
-        height: 4.545454545454546vh;
-        width: 55.01354166666667vw;
-        color: white;
-    }
-
-    #footer-content-logo{
-        display: flex;
-        flex-direction: row;
-        gap: 11.393749999999999vw;
-    }
-
-    #footer-owners{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 3.1575757575757573vh;
-        background-color: #1D1C22;
-    }
-
-    #footer-owners-pg{
-        font-size: 1.2626262626262625vh;
-        color: white;
-    }
-</style>
 <script src="register-page-script.js"></script>
 </html>

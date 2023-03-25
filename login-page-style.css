@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#nav-bar{
+    height: 50px;
+    background-color: #1D1C22;
+}
+
+/* Login Page */
+#login-page{
+    padding-top: 50px;
+    width: 100%;
+    background-image: url("Images/Home Page Images/Jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#login-page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-page-content-container{
+    position: relative;
+}
+
+
+/* Login Logo */
+#login-page-content-img{
+    height: 300px;
+    width: 30vw;
+}
+
+.jenshin-logo{
+    height: 100%;
+    width: 100%;
+}
+
+#jenshin-fields-logo{
+    display: flex;
+    height: 75%;
+    width: 75%;
+}
+
+#login-fields-container-logo{
+    justify-content: center;
+    display: none;
+}
+
+/* Login Main Content*/
+#login-page-rect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(75% - 32.552083333333336vw);
+    height: 100vh;
+    background-color: #00000050;
+}
+
+/* Login Header */
+#login-fields-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(100% + 0.5vw);
+}
+
+#login-page-content-fields-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30.041666666666668vw;
+    gap: 3.1565656565656566vh;
+    color: #ffff;
+}
+
+/* Login Form*/
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Login Field*/
+#login-fields-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.txt-field{
+    /* height: 35px; */
+    height: calc(17.5px + 2.20959595959596vh);
+    width: 100%;
+    padding-left: 15px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.invalid-alert{
+    color: red;
+    opacity: 0;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 9pt;
+}
+
+#login-submit{
+    width: 150px;
+}
+
+#submit-button{
+    /* height: 35px; */
+    height: calc(17.5px + 2.20959595959596vh);
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: #FF3A44;
+    border-style: none;
+    border-radius: 10px;
+}
+
+#submit-button:hover{
+    cursor: pointer;
+    transition: 200ms;
+    transform: scale(1.1);
+    background-color: #F4898F;
+}
+
+/* Login app buttons*/
+#login-app-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+}
+
+.app-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #ffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.app-button:hover{
+    cursor: pointer;
+    transition: 200ms;
+    transform: scale(1.1);
+}
+
+#google-button{
+    background-image: url("Images/Other Images/google-logo.png");
+}
+
+#twitter-button{
+    background-image: url("Images/Other Images/twitter logo.png");
+}
+
+#apple-button{
+    background-image: url("Images/Other Images/apple-logo.png");
+}
+
+/* Register Link */
+#register-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    padding-top: 100px;
+    color: #ffff;
+    background-color: #000000;
+}
+
+#footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 40px; */
+    gap: 30%;
+    padding-bottom: 100px;
+    height: 27.210884353741495vh;
+}
+
+/* Footer main content*/
+#footer-paragraph-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: calc(70% + 0.2vw);
+}
+
+#footer-logo-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+}
+
+/* Footer Logo */
+/* .footer-logo{
+    height: 50%;
+    width: 75%;
+} */
+
+#cognosphere-logo{
+    width: 70%;
+}
+
+#rating-logo{
+    height: 80%;
+}
+
+#footer-jenshin-logo{
+    height: 50%;
+    width: 70%;
+}
+
+/* Footer Social Media Logo*/
+#footer-social-media-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.footer-social-media-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+.link-target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer owners */
+#footer-owners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D1C22;
+}
+
+#footer-owners-paragraph{
+    font-size: calc(70% + 0.2vw);
+    text-align: center;
+}
+
+/* Login Page Media Query */
+@media only screen and (max-width: 426px) {
+    #nav-bar{
+        display: none;
+    }
+
+    #login-page{
+        padding-top: 0;
+    }
+
+    #container-img{
+        display: none;
+    }
+
+    #login-fields-container-logo{
+        display: flex;
+    }
+
+    #login-page-rect{
+        width: 75%;
+    }
+
+    .txt-field{
+        width: 75%;
+    }
+
+    #login-page-content-fields-container{
+        width: 100%;
+    }
+
+    #rating-logo{
+        height: 60%;
+    }
+
+    .footer-social-media{
+        height: 25px;
+        width: 25px;
+    }
+
+    .footer-social-media-logo{
+        height: 80%;
+        width: 80%;
+    }
+}

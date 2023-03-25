@@ -1,90 +1,127 @@
-const submit = document.getElementById("register-form-button");
-submit.addEventListener("click", validate_form);
+const submit = document.getElementById("submit-button")
+submit.addEventListener("click", validate_form)
 
 function validate_username(username){
-    var alertInvalid = document.getElementById("username-invalid-alert");
+    
+    var invalid_username = document.getElementById("invalid-username")
 
-    if(username.length == 0 || username.length > 20){
-        alertInvalid.style.opacity = 100;
-        return false;
+    if(username.length <= 0){
+        invalid_username.innerHTML = "*username cannot be empty"
+        invalid_username.style.opacity = 100
+        return false
     }
 
-    alertInvalid.style.opacity = 0;
-    return true;
+    if(username.length > 20){
+        invalid_username.innerHTML = "*username must be less than 20 chars"
+        invalid_username.style.opacity = 100
+        return false
+    }
+
+    invalid_username.style.opacity = 0
+    return true
+}
+
+function check_pass(password){
+    count_num = 0
+    count_lower = 0
+
+    for(i = 0; i < password.length; i++){
+        if(isNaN(password[i]) == true){
+            count_num++
+        } else if(password[i] == password[i].toLowerCase()){
+            count_lower++
+        }
+    }
+
+    if(count_num >= 1 && count_lower >= 1){
+        return true
+    }
+
+    return false
 }
 
 function validate_password(password){
-    var alertInvalid = document.getElementById("password-invalid-alert");
 
-    if(password.length == 0 || password.length < 8){
-        alertInvalid.style.opacity = 100;
-        return false;
+    var invalid_password = document.getElementById("invalid-password")
+
+    if(password.length <= 0){
+        invalid_password.innerHTML = "*password cannot be empty"
+        invalid_password.style.opacity = 100
+        return false
     }
 
-    alertInvalid.style.opacity = 0;
-    return true;
+    if(password.length <= 8){
+        invalid_password.innerHTML = "*password cannot be less than 8 chars"
+        invalid_password.style.opacity = 100
+        return false
+    }
+
+    if(check_pass(password) == false){
+        invalid_password.innerHTML = "*password must contain atleast 1 lowercase and 1 number"
+        invalid_password.style.opacity = 100
+        return false
+    }
+
+    invalid_password.style.opacity = 0
+    return true
 }
 
 function validate_email(email){
-    var is_valid = true;
-    var alertInvalid = document.getElementById("email-invalid-alert");
+    var invalid_email = document.getElementById("invalid-email")
 
-    var symbol = email.indexOf("@");
-    var dot = email.indexOf(".");
-    if(symbol < 1) is_valid = false;
-    if(dot == email.length - 1) is_valid = false;    
-
-    if(is_valid == false){
-        alertInvalid.style.opacity = 100;
-        return false;
+    if(!email.includes('@gmail.com') && !email.includes('@yahoo.com') && !email.includes('@outlook.com')){
+        invalid_email.style.opacity = 100
+        return false
     }
 
-    alertInvalid.style.opacity = 0;
-    return true;
+    invalid_email.style.opacity = 0
+    return true
 }
 
 function validate_age(age){
-    var alertInvalid = document.getElementById("age-invalid-alert");
+    var invalid_age = document.getElementById("invalid-age")
 
-    if(age < 13){
-        alertInvalid.style.opacity = 100;
-        return false;
+    if(age < 12){
+        invalid_age.style.opacity = 100
+        return false
     }
-    
-    alertInvalid.style.opacity = 0;
-    return true;
+
+    invalid_age.style.opacity = 0
+    return true
 }
 
-function validate_agreement(agreement){
-    var txt = document.getElementById("agreement-txt");
+function validate_terms(terms){
+    var terms_txt = document.getElementById("terms-txt")
 
-    if(!agreement.checked){
-        txt.style.color = "red";
-        txt.style.textDecoration = "underline";
-        return false;
+    if(!terms.checked){
+        terms_txt.style.color = 'red'
+        return false
     }
-    
-    txt.style.color = "white";
-    txt.style.textDecoration = "none";
-    return true;
+
+    terms_txt.style.color = 'white'
+    return true
 }
 
 function validate_form(e){
-    var username = document.getElementById("register-form-user");
-    var password = document.getElementById("register-form-pass");
-    var email = document.getElementById("register-form-email");
-    var age = document.getElementById("register-form-age");
-    var agreement = document.getElementById("register-form-agreement");
+    e.preventDefault()
 
-    e.preventDefault();
-    var is_username = validate_username(username.value);
-    var is_password = validate_password(password.value);
-    var is_email = validate_email(email.value);
-    var is_age = validate_age(age.value);
-    var is_agreement = validate_agreement(agreement);
+    var get_username = document.getElementById("username").value
+    var get_password = document.getElementById("password").value
+    var get_email = document.getElementById("email").value
+    var get_age = document.getElementById("age").value
+    var get_terms = document.getElementById("terms")
 
-    if(is_username == true && is_password == true && is_email == true && is_age == true && is_agreement == true){
-        alert("Success");
-        document.location.href = "#";
+    var check_user = validate_username(get_username)
+    var check_pass = validate_password(get_password)
+    var check_email = validate_email(get_email)
+    var check_age = validate_age(get_age)
+    var check_terms = validate_terms(get_terms)
+
+    if(check_user == true && check_pass == true && check_email == true && check_age == true && check_terms == true){
+        document.location.href = "login-page-index.html"
     }
+}
+
+function open_login_page(){
+    document.location.href = "login-page-index.html"
 }
