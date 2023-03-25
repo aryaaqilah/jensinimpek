@@ -20,7 +20,7 @@ nav{
 #login-page{
     padding-top: 50px;
     width: 100%;
-    background-image: url("Images/Home Page Images/Jumbotron.jpg");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Home%20Page%20Images/Jumbotron.jpg?raw=true");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -187,15 +187,15 @@ nav{
 }
 
 #google-button{
-    background-image: url("Images/Other Images/google-logo.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Other%20Images/google-logo.png?raw=true");
 }
 
 #twitter-button{
-    background-image: url("Images/Other Images/twitter logo.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Other%20Images/twitter%20logo.png?raw=true");
 }
 
 #apple-button{
-    background-image: url("Images/Other Images/apple-logo.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Other%20Images/apple-logo.png?raw=true");
 }
 
 /* Register Link */

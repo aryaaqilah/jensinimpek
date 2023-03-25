@@ -155,7 +155,7 @@ nav{
 .map-info-button{
     /* height: 40px; */
     /* width: 40px; */
-    background-image: url("Images/Map Page Images/more-information-button.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Map%20Page%20Images/more-information-button.png?raw=true");
     background-size: cover;
     background-position: center;
     border-style: solid;
@@ -169,39 +169,39 @@ nav{
     cursor: pointer;
     transition: 200ms;
     transform: scale(1.1);
-    background-image: url("Images/Map Page Images/more\ information\ button\ hover.svg");
+    background-image: url("https://raw.githubusercontent.com/aryaaqilah/jensinimpek/7a63eeca2b6f2adb95dd0fedda9806215fded309/Map%20Page%20Images/more%20information%20button%20hover.svg");
 }
 
 #tevyat-container{
-    background-image: url("Images/Map Page Images/tevyat.jpg");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Map%20Page%20Images/tevyat.jpg?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #mondstadt-container{
-    background-image: url("Images/Map Page Images/mondstadt-page-back.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Map%20Page%20Images/mondstadt-page-back.png?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #liyue-container{
-    background-image: url("Images/Map Page Images/liyue-page-back.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Map%20Page%20Images/liyue-page-back.png?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #inazuma-container{
-    background-image: url("Images/Map Page Images/inazuma-page-back.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Map%20Page%20Images/inazuma-page-back.png?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #sumeru-container{
-    background-image: url("Images/Map Page Images/sumeru-page-back.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Map%20Page%20Images/sumeru-page-back.png?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ nav{
 .map-popup-close-button{
     height: 90%;
     width: 90%;
-    background-image: url("Images/Map Page Images/Close Button.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/Map%20Page%20Images/Close%20Button.png?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

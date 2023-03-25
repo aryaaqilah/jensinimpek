@@ -5,7 +5,7 @@
     }
 
     body{
-        background-image: url("Images/About Us Page/background.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/background.png?raw=true");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -43,7 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("Images/About Us Page/about\ jumbotron\ Back.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/about%20jumbotron%20Back.png?raw=true");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -130,7 +130,7 @@
         justify-content: center;
         align-items: center;
         height: calc(18.939393939393938vh + 9.765625vw);
-        background-image: url("Images/About Us Page/about\ content\ background.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/about%20content%20background.png?raw=true");
         background-size: 110% calc(18.939393939393938vh + 9.765625vw);
         background-repeat: no-repeat;
         background-position: center;
@@ -195,27 +195,27 @@
     }
 
     #google-button{
-        background-image: url("Images/About Us Page/google.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/google.png?raw=true");
     }
     
     #google-button:hover{
-        background-image: url("Images/About Us Page/googlehover.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/googlehover.png?raw=true");
     }
     
     #app-store-button{
-        background-image: url("Images/About Us Page/apple.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/apple.png?raw=true");
     }
     
     #app-store-button:hover{
-        background-image: url("Images/About Us Page/applehover.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/applehover.png?raw=true");
     }
     
     #windows-button{
-        background-image: url("Images/About Us Page/windows.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/windows.png?raw=true");
     }
     
     #windows-button:hover{
-        background-image: url("Images/About Us Page/windowshover.png");
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/About%20Us%20Page/windowshover.png?raw=true");
     }
 
     /* Footer */
