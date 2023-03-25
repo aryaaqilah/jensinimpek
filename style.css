@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: fontJensin;
-    src: url(assets/zhcn.ttf);
+    src: url("https://github.com/aryaaqilah/jensinimpek/blob/a25f6e069cb586f69313d73b02d746ec5d7da2d6/assets/zhcn.ttf");
 }
 .navbar{
     display: flex;
@@ -184,7 +184,7 @@
 }
 
 .jumbotron {
-    background-image: url("assets/Rectangle 58.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Rectangle%2058.png?raw=true");
     background-size: cover;
     max-width: 100%;
     width: 100vw;
@@ -194,7 +194,7 @@
 }
 
 .jumbotron .jumbotron-container {
-    background-image: url("assets/Vector.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Vector.png?raw=true");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -230,7 +230,7 @@
 }
 
 .batas1{
-    background-image: url("assets/`newsBG.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/%60newsBG.png?raw=true");
     background-size: cover;
     max-width: 100%;
     height: 50vh;
@@ -246,7 +246,7 @@
     padding: 2vh;
     background-image: 
         linear-gradient(180deg, #ff00, #FFFAED),
-        url("assets/aaaa.png");
+        url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/aaaa.png?raw=true");
 }
 
 .newsPage{
@@ -295,7 +295,7 @@
 .news1{
     grid-area: news1;
     /* background-color: #FF3A44; */
-    background-image: url(assets/NEWS\ PANEL\ 1.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/NEWS%20PANEL%201.png?raw=true");
     background-size: cover;
     /* max-height: 100%;
     max-width: 100%; */
@@ -304,7 +304,7 @@
 }
 
 .news1 .border1{
-    background-image: url(assets/OutlineNews.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/OutlineNews.png?raw=true");
     background-size: cover;
     max-width: 100%;
     max-height: 100%;
@@ -316,7 +316,7 @@
 .news2{
     grid-area: news2;
     /* background-color: blue; */
-    background-image: url(assets/NEWS\ PANEL\ 2.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/NEWS%20PANEL%202.png?raw=true");
     background-size: cover;
     grid-row-start: 1;
     grid-row-end: 6;
@@ -326,7 +326,7 @@
 .news3{
     grid-area: news3;
     /* background-color: cornflowerblue; */
-    background-image: url(assets/NEWS\ PANEL\ 3.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/NEWS%20PANEL%203.png?raw=true");
     grid-row-start: 5;
     grid-row-end: 8;
     background-size: cover;
@@ -336,7 +336,7 @@
 .news4{
     grid-area: news4;
     /* background-color: dimgrey; */
-    background-image: url(assets/NEWS\ PANEL\ 4.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/NEWS%20PANEL%204.png?raw=true");
     background-size: cover;
     grid-row-start: 6;
     grid-row-end: 8;
@@ -373,7 +373,7 @@
 }
 
 .batas2{
-    background-image: url("assets/`newsBG.png");
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/%60newsBG.png?raw=true");
     background-size: cover;
     max-width: 100%;
     height: 50vh;
@@ -397,7 +397,7 @@
         rgba(64, 64, 64, 0.504) 50%,
         #1d1c22 100%
         ),
-        url("assets/aaaa.png");
+        url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/aaaa.png?raw=true");
 }
 
 .updateDiv{
@@ -418,7 +418,7 @@
     rgba(64, 64, 64, 0) 20%,
     #1d1c22 90%,
     #1d1c22 100%),
-    url(assets/updateBGpng.png);
+    url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/updateBGpng.png?raw=true");
     background-size: cover;
     display: flex;
     /* height: 100rem;
@@ -435,7 +435,7 @@
 }
 
 .updateDiv .imgUpdate .imgBorder{
-    background-image: url(assets/vectorUpdate.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/vectorUpdate.png?raw=true");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -485,7 +485,7 @@
 }
 
 .updateDiv .imgUpdate .imgBorder .book{
-    background-image: url(assets/Book.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Book.png?raw=true");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* object-fit: contain; */
@@ -645,7 +645,7 @@
     #1d1c2200 10%,
     rgba(64, 64, 64, 0) 95%,
     #FFFAED 100%)
-    ,url(assets/Update\ page\ wall\ 1.png);
+    ,url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Update%20page%20wall%201.png?raw=true");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: auto;
@@ -682,7 +682,7 @@
 
 .gridLimitedTime .line{
     /* grid-area: line; */
-    background-image: url(assets/LINE.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/LINE.png?raw=true");
     background-size: contain;
     background-repeat: no-repeat;
     width: 5%;
@@ -772,7 +772,7 @@
 }
 
 .isi .event .eventIsi .eventKiri{
-    background-image: url(assets/Event\ 1.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Event%201.png?raw=true");
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
@@ -780,7 +780,7 @@
 }
 
 .isi .event .eventIsi .eventKanan{
-    background-image: url(assets/Event\ 3.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Event%203.png?raw=true");
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
@@ -811,7 +811,7 @@
 }
 
 .isi .weapon .weaponIsi .weapon1{
-    background-image: url(assets/Weapon\ Circle2.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Weapon%20Circle2.png?raw=true");
     background-size: 90% 90%;
     background-repeat: no-repeat;
     width: 29%;
@@ -823,7 +823,7 @@
 }
 
 .isi .weapon .weaponIsi .weapon2{
-    background-image: url(assets/Weapon\ Circle1.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Weapon%20Circle1.png?raw=true");
     background-size: 80% 80%;
     background-repeat: no-repeat;
     width: 29%;
@@ -836,7 +836,7 @@
 }
 
 .isi .weapon .weaponIsi .weapon3{
-    background-image: url(assets/Weapon\ Circle3.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Weapon%20Circle3.png?raw=true");
     background-size: 80% 80%;
     background-repeat: no-repeat;
     width: 29%;
@@ -888,7 +888,7 @@
     }
 
     .isi .event .eventIsi .eventKiri{
-        background-image: url(assets/Event\ 1.png);
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Event%201.png?raw=true");
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
@@ -896,7 +896,7 @@
     }
     
     .isi .event .eventIsi .eventKanan{
-        background-image: url(assets/Event\ 3.png);
+        background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Event%203.png?raw=true");
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
@@ -1095,7 +1095,7 @@
     #1d1c2200 70%,
     #fffaed 80%,
     #FFFAED 100%)
-    ,url(assets/CHARACTER\ PAGE\ 1.png);
+    ,url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CHARACTER%20PAGE%201.png?raw=true");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
@@ -1112,7 +1112,7 @@
     #1d1c2200 70%,
     #fffaed 80%,
     #FFFAED 100%)
-    ,url(assets/charPage2.png);
+    ,url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/charPage2.png?raw=true");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
@@ -1129,7 +1129,7 @@
     #1d1c2200 70%,
     #fffaed 80%,
     #FFFAED 100%)
-    ,url(assets/charPage3.png);
+    ,url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/charPage3.png?raw=true");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
@@ -1146,7 +1146,7 @@
     #1d1c2200 70%,
     #fffaed 80%,
     #FFFAED 100%)
-    ,url(assets/charPage4.png);
+    ,url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/charPage4.png?raw=true");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
@@ -1193,7 +1193,7 @@
 } */
 
 .charSeeButton{
-    background-image: url(assets/See\ Characters.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/See%20Characters.png?raw=true");
     background-size: contain;
     height: 20%;
     width: 10%;
@@ -1212,7 +1212,7 @@
 }
 
 .comingChar .gambarTengahCarousel .gambarTengah .charSee .charList{
-    background-image: url(assets/CHARACTER\ INFO\ LOGO.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CHARACTER%20INFO%20LOGO.png?raw=true");
     top : 44%;
     left: 24%;
     background-size: contain;
@@ -1231,7 +1231,7 @@
 }
 
 .comingChar .gambarTengahCarousel .gambarTengah .charSee2 .charList2{
-    background-image: url(assets/see2.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/see2.png?raw=true");
     top : 44%;
     left: 24%;
     background-size: contain;
@@ -1250,7 +1250,7 @@
 }
 
 .comingChar .gambarTengahCarousel .gambarTengah .charSee3 .charList3{
-    background-image: url(assets/see3.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/see3.png?raw=true");
     top : 44%;
     left: 24%;
     background-size: contain;
@@ -1269,7 +1269,7 @@
 }
 
 .comingChar .gambarTengahCarousel .gambarTengah .charSee4 .charList4{
-    background-image: url(assets/see4.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/see4.png?raw=true");
     top : 44%;
     left: 24%;
     background-size: contain;
@@ -1452,7 +1452,7 @@
         #fffaed 0%,
         #fffaed 10%,
         #fffaed00 20%,
-        #fffaed00 100%) ,url(assets/ExploreBG.png);
+        #fffaed00 100%) ,url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/ExploreBG.png?raw=true");
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -1483,7 +1483,7 @@
 }
 
 .pointEx{
-    background-image: url(assets/SLIDER\ CIRCLES\ 2.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/SLIDER%20CIRCLES%202.png?raw=true");
     background-size: contain;
     height: 100%;
     width: 10%;
@@ -1491,7 +1491,7 @@
 }
 
 .frameExplore{
-    background-image: url(assets/VectorEx.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/VectorEx.png?raw=true");
     background-size: 100% 95%;
     background-repeat: no-repeat;
     height: 85%;
@@ -1511,7 +1511,7 @@
 
 .gambarEx{
     /* top : 50%; */
-    background-image: url(assets/MAP.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/MAP.png?raw=true");
     background-size: 70% 90%;
     height: 90%;
     width: 43%;
@@ -1554,7 +1554,7 @@
 }
 
 .buttonEx{
-    background-image: url(assets/Explore\ Tevyat\ Button.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Explore%20Tevyat%20Button.png?raw=true");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 25%;
@@ -1564,7 +1564,7 @@
 }
 
 .footer{
-    background-image: url(assets/Footer.png);
+    background-image: url("https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/Footer.png?raw=true");
     background-size: 100% 100%;
     width: 100%;
     height: 60vh;
@@ -1642,5 +1642,224 @@
         font-size: 3vh;
         align-self: center;
         top: 70%;
+    }
+}
+
+ /* Footer */
+ footer{
+    width: 100%;
+    padding-top: 100px;
+    color: #ffff;
+    background-color: #000000;
+}
+
+#footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 40px; */
+    gap: 30%;
+    padding-bottom: 100px;
+    height: 27.210884353741495vh;
+}
+
+/* Footer main content*/
+#footer-paragraph-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: calc(70% + 0.2vw);
+}
+
+#footer-logo-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+}
+
+/* Footer Logo */
+/* .footer-logo{
+    height: 50%;
+    width: 75%;
+} */
+
+#cognosphere-logo{
+    width: 70%;
+}
+
+#rating-logo{
+    height: 80%;
+}
+
+#footer-jenshin-logo{
+    height: 50%;
+    width: 70%;
+}
+
+/* Footer Social Media Logo*/
+#footer-social-media-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.footer-social-media-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+}
+
+.link-target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer owners */
+#footer-owners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D1C22;
+}
+
+#footer-owners-paragraph{
+    font-size: calc(70% + 0.2vw);
+    text-align: center;
+}
+
+/* Map Page Media Query */
+@media only screen and (max-width: 426px) {
+    
+    /* Nav Bar */
+    #nav-bar{
+        display: none;
+    }
+    
+    /* Map Page */
+    #first-white-rect{
+        height: 0;
+    }
+
+    .map-info-paragraph-container{
+        /* width: 400px; */
+        width: calc(25.252525252525253vh + 13.020833333333334vw);
+    }
+
+    /* Footer */
+    #rating-logo{
+        height: 60%;
+    }
+
+    .footer-social-media{
+        height: 25px;
+        width: 25px;
+    }
+
+    .footer-social-media-logo{
+        height: 80%;
+        width: 80%;
+    }
+}
+
+.aboutUs{
+    background-image: url("assets/BackgroundAboutUs.png");
+    width: 100vw;
+    height: 100vh;
+}
+
+.aboutUsImg{
+    background-image: linear-gradient(
+        to bottom,
+        #1d1c2200 0%,
+        #1d1c22 15%,
+        #1d1c22f0 20%,
+        #1d1c2200 35%,
+        #1d1c22 90%,
+        #1d1c2276 100%) ,url("assets/BackgroundAboutUsImg.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsContainer{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 5%
+}
+
+.iconAboutUs{
+    display: flex;
+    justify-content: center;
+}
+
+.descAboutUs{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.buttonAboutUs{
+    background-image: url("assets/AboutUsButton.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 7%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width : 769px) and (min-width :426px){
+    .buttonAboutUs{
+        height : 5%;
+    }
+
+    .descAboutUs{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 426px){
+    .buttonAboutUs{
+        height : 5%;
+        width: 30%;
+    }
+
+    .descAboutUs{
+        font-size: 1.1rem;
     }
 }

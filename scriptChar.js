@@ -33,56 +33,56 @@ dropMenu.addEventListener('click', () => {
 // ini jgn dulu dipake buat ntar pas pindah map berubah cardnya
 let btn_cards = [
     [
-        'assets/CharacterPage/venticard1.png',
-        'assets/CharacterPage/jean_character_card.png',
-        'assets/CharacterPage/diluccard1.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/venticard1.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/jean_character_card.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/diluccard1.png?raw=true'
     ],
     [
-        'assets/CharacterPage/liyue_card_1.png',
-        'assets/CharacterPage/liyue_card_2.png',
-        'assets/CharacterPage/liyue_card_3.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/liyue_card_1.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/liyue_card_2.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/liyue_card_3.png?raw=true'
     ],
     [
-        'assets/CharacterPage/inazuma_card_1.png',
-        'assets/CharacterPage/inazuma_card_2.png',
-        'assets/CharacterPage/inazuma_card_3.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/inazuma_card_1.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/inazuma_card_2.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/inazuma_card_3.png?raw=true'
     ],
     [
-        'assets/CharacterPage/sumeru_card_1.png',
-        'assets/CharacterPage/sumeru_card_2.png',
-        'assets/CharacterPage/sumeru_card_3.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/sumeru_card_1.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/sumeru_card_2.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/sumeru_card_3.png?raw=true'
     ]
 ]
 
 //ini array buat ganti background image
 let backgroundsImage = [
-    '/assets/CharacterPage/bg.png',
-    '/assets/CharacterPage/bg_liyue.svg',
-    '/assets/CharacterPage/bg_inazuma.svg',
-    '/assets/CharacterPage/bg_sumeru.svg'
+    'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/bg.png?raw=true',
+    'https://raw.githubusercontent.com/aryaaqilah/jensinimpek/dd97ff0128aa0c9203a5bbe72f9a58c3a59c38b2/assets/CharacterPage/bg_liyue.svg',
+    'https://raw.githubusercontent.com/aryaaqilah/jensinimpek/dd97ff0128aa0c9203a5bbe72f9a58c3a59c38b2/assets/CharacterPage/bg_inazuma.svg',
+    'https://raw.githubusercontent.com/aryaaqilah/jensinimpek/dd97ff0128aa0c9203a5bbe72f9a58c3a59c38b2/assets/CharacterPage/bg_sumeru.svg'
 ]
 
 // ini array buat ganti gambar karakternya
 let charactersUrl = [
     [
-        '/assets/CharacterPage/VentiChar.png',
-        '/assets/CharacterPage/VentiChar2.png',
-        '/assets/CharacterPage/VentiChar3.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/VentiChar.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/VentiChar2.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/VentiChar3.png?raw=true'
     ],
     [
-        '/assets/CharacterPage/Liyue1_Zhongli.png',
-        '/assets/CharacterPage/Liyue2_Ningguang.png',
-        '/assets/CharacterPage/Liyue3_Beidou.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/Liyue1_Zhongli.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/Liyue2_Ningguang.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/Liyue3_Beidou.png?raw=true'
     ],
     [
-        '/assets/CharacterPage/inazuma1_raiden.png',
-        '/assets/CharacterPage/inazuma2_kamisato.png',
-        '/assets/CharacterPage/inazuma3_kadehara.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/inazuma1_raiden.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/inazuma2_kamisato.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/inazuma3_kadehara.png?raw=true'
     ],
     [
-        '/assets/CharacterPage/sumeru1_nahida.png',
-        '/assets/CharacterPage/sumeru2_cyno.png',
-        '/assets/CharacterPage/sumeru3_nilou.png'
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/sumeru1_nahida.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/sumeru2_cyno.png?raw=true',
+        'https://github.com/aryaaqilah/jensinimpek/blob/finale/assets/CharacterPage/sumeru3_nilou.png?raw=true'
 
     ]
 ]
