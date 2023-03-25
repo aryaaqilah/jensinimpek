@@ -4,6 +4,22 @@ const mikaBanner = document.getElementById('mika')
 const containerBannerChar = document.getElementById('bannerChar')
 const karakternyaJS = document.querySelectorAll(".karakternya")
 
+const dropMenu = document.querySelector(".navbar .menu-icon");
+const dropMenuList = document.querySelector(".dropMenu")
+
+dropMenu.addEventListener('click', () => {
+    if (dropMenu.dataset.active) {
+        dropMenuList.style.top = "25px"
+        dropMenuList.style.left = "-1000px"
+        delete dropMenu.dataset.active
+    }
+    else {
+        dropMenuList.style.top = "25px"
+        dropMenuList.style.left = "0"
+        dropMenu.dataset.active = true
+    }
+})
+
 
     setInterval(() => {
         const slides = document.querySelector("[data-slides]")
@@ -65,17 +81,17 @@ const karakternyaJS = document.querySelectorAll(".karakternya")
     let myIndex2 = 0;
     carousel2();
 
-    function carousel2() {
-        var i2;
-        var x2 = document.getElementsByClassName("gambarMap");
-        for (i2 = 0; i2 < x2.length; i2++) {
-            x2[i2].style.display = "none";  
-        }
-        myIndex2++;
-        if (myIndex2 > x2.length) {myIndex2 = 1}    
-        x2[myIndex2-1].style.display = "flex";  
-        setTimeout(carousel2, 2000); // Change image every 2 seconds
-    }
+    // function carousel2() {
+    //     var i2;
+    //     var x2 = document.getElementsByClassName("gambarMap");
+    //     for (i2 = 0; i2 < x2.length; i2++) {
+    //         x2[i2].style.display = "none";  
+    //     }
+    //     myIndex2++;
+    //     if (myIndex2 > x2.length) {myIndex2 = 1}    
+    //     x2[myIndex2-1].style.display = "flex";  
+    //     setTimeout(carousel2, 2000); // Change image every 2 seconds
+    // }
     
 }, 100);
 

@@ -8,6 +8,26 @@
     font-family: fontJensin;
     src: url(assets/zhcn.ttf);
 }
+
+.slide{
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.slide[data-active]{
+    opacity : 1;
+}
+
+.slide img{
+    padding-right: 3%;
+}
+
 .navbar{
     display: flex;
     /* top : 0; */
@@ -15,6 +35,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    position: relative;
     width : 100%;
     font-family: fontJensin ;
     z-index: 100;
@@ -114,6 +135,73 @@
     text-align: center;
 }
 
+.menu-icon img{
+    display: none;
+    width : 5rem;
+    height : auto;
+    /* background-color: brown; */
+    align-items: center;
+}
+
+.dropMenu{
+    display: none;
+}
+
+.dropMenuContainer{
+    display: none;
+}
+
+@media screen and (max-width : 426px){
+
+    .menu-icon img{
+        display: block;
+        width : 3.2rem;
+        height : auto;
+        /* background-color: brown; */
+        align-items: center;
+    }
+
+    .tengah, .kanan{
+        display: none;
+    }
+
+    .navbar{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logoNav{
+        /* position: absolute */
+        display: flex;
+        /* align-self: ; */
+        /* z-index: 101; */
+    }
+
+    .dropMenuContainer {
+        display: block;
+        position: absolute;
+        width: 100vw;
+    }
+
+    .dropMenu {
+        left: -1000px;
+        position: absolute;
+        padding: 2vh;
+        background-color: #1d1c22b2;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+        font-size: 1em;
+        /* transition: all 0.5s; */
+        width: 100%;
+    }
+
+    .dropMenu a {
+        color: #dbc7ac;
+        text-decoration: none;
+    }
+}
 
 .bgChar{
     /* background-image: url(assets/CharacterPage/bg.png); */
@@ -312,4 +400,129 @@
     height: 60vh;
     max-width: 100%;
 
+}
+
+@media screen and (max-width : 426px){
+    .atasnya{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap : 1.7rem;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .kiriChar{
+        height: 10%;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .kosong{
+        display: none;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .map{
+        font-size: 1rem;
+        border-bottom : solid #dbc7ac;
+        /* margin-left: 3; */
+    }
+
+    .bawahnya{
+        height: 20%;
+    }
+
+    .card{
+        width: 17%;
+    }
+
+    .kananChar{
+        width: 100vw;
+    }
+
+    .kananChar .kananCharPic{
+
+        width: 100%;
+    }
+
+    .descChar .desc{
+        font-size: 0.7rem;
+    }
+
+    .kananCharPic .namaChar{
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width : 769px) and (min-width :426px){
+    .atasnya{
+        display: flex;
+        /* flex-direction: column-reverse; */
+    }
+
+    .hero{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content:center ;
+        /* align-items: center; */
+        gap : 5rem;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .kiriChar{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin-right: 2%;
+    }
+
+    .kosong{
+        display: none;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .bawahnya{
+        height: 20%;
+    }
+
+    .card{
+        width: 10%;
+    }
+
+    .kananChar{
+        width: 100vw;
+    }
+
+    .kananChar .kananCharPic{
+
+        width: 100%;
+    }
+
+    .descChar .desc{
+        font-size: 0.7rem;
+    }
+
+    .kananCharPic .namaChar{
+        padding-left: 5%;
+    }
 }

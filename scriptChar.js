@@ -14,6 +14,22 @@ const cards = document.querySelectorAll(".card")
 const bgChar = document.getElementById('bgChar')
 const maps = document.querySelectorAll("map")
 
+const dropMenu = document.querySelector(".navbar .menu-icon");
+const dropMenuList = document.querySelector(".dropMenu")
+
+dropMenu.addEventListener('click', () => {
+    if (dropMenu.dataset.active) {
+        dropMenuList.style.top = "25px"
+        dropMenuList.style.left = "-1000px"
+        delete dropMenu.dataset.active
+    }
+    else {
+        dropMenuList.style.top = "25px"
+        dropMenuList.style.left = "0"
+        dropMenu.dataset.active = true
+    }
+})
+
 // ini jgn dulu dipake buat ntar pas pindah map berubah cardnya
 let btn_cards = [
     [
@@ -112,6 +128,7 @@ charDesc.innerHTML = charactersText[0][0];
 card1.style.backgroundImage = 'url(' + btn_cards[0][0]+')'
 card2.style.backgroundImage = 'url(' + btn_cards[0][1]+')'
 card3.style.backgroundImage = 'url(' + btn_cards[0][2]+')'
+
 
 // ini buat dimainin indeksnya
 var posisi = 0;
